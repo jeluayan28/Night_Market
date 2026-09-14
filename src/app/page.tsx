@@ -16,18 +16,18 @@ const MOCK_STALLS = [
     category: "Street Food",
     isOpen: true,
     location: "Lane A - Stall 12",
-    popularItem: "Spicy Pork Belly Skewers",
+    popularItem: "Spicy Sizzling Sisig",
     rating: "4.8",
     prepTime: "10-15 min",
     image: "/f1.png",
   },
   {
     id: "2",
-    name: "Golden Dumpling House",
-    category: "Asian Specialties",
+    name: "Grab A-TEA",
+    category: "Milk Tea",
     isOpen: true,
     location: "Lane B - Stall 04",
-    popularItem: "Pan-Fried Steamed Buns",
+    popularItem: "Velvet Oreo MilkTea",
     rating: "4.9",
     prepTime: "5-10 min",
     image: "/f2.png",
@@ -56,11 +56,11 @@ const MOCK_STALLS = [
   },
   {
     id: "5",
-    name: "Crispy Taco Alley",
-    category: "Mexican Street",
+    name: "Lugaw ni Jeseca",
+    category: "Filipino Lugaw",
     isOpen: true,
     location: "Lane B - Stall 10",
-    popularItem: "Birria Tacos with Consomé",
+    popularItem: "Overload Lugaw",
     rating: "4.8",
     prepTime: "10 min",
     image: "/f5.png",
@@ -78,11 +78,11 @@ const MOCK_STALLS = [
   },
   {
     id: "7",
-    name: "Fire Grill Seafood",
-    category: "Seafood BBQ",
+    name: "MatCUP",
+    category: "Matcha Series",
     isOpen: false,
     location: "Lane C - Stall 15",
-    popularItem: "Grilled Butter Garlic Prawns",
+    popularItem: "Matcha Cloud(Premium Matcha)",
     rating: "4.9",
     prepTime: "15 min",
     image: "/f7.png",
@@ -219,7 +219,7 @@ export default function HomePage() {
 
                 {/* Card Action Button */}
                 <div className="px-4 pb-4">
-                  <Button className="w-full bg-[#6C4CF1] hover:bg-[#6C4CF1]/90 text-white font-medium">
+                  <Button className="w-full bg-[#17152B] hover:bg-[#17152B]/90 text-white font-medium">
                     View Menu
                   </Button>
                 </div>
