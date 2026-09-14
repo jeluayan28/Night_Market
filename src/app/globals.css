@@ -57,3 +57,126 @@ body {
   color: var(--foreground);
   font-family: system-ui, -apple-system, sans-serif;
 }
+
+@keyframes sway {
+  0%, 100% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(4deg);
+  }
+}
+
+@keyframes flicker {
+  0%, 100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 12px currentColor);
+  }
+  33% {
+    opacity: 0.85;
+    filter: drop-shadow(0 0 6px currentColor);
+  }
+  66% {
+    opacity: 0.95;
+    filter: drop-shadow(0 0 16px currentColor);
+  }
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-40px) scale(1.2);
+    opacity: 0;
+  }
+}
+
+.animate-sway {
+  transform-origin: top center;
+  animation: sway 4s ease-in-out infinite;
+}
+
+.animate-sway-slow {
+  transform-origin: top center;
+  animation: sway 6s ease-in-out infinite;
+}
+
+.animate-flicker {
+  animation: flicker 3s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: floatUp 5s linear infinite;
+}
+
+/* Walk across screen from left to right */
+@keyframes walkAcross {
+  0% {
+    transform: translateX(-150px);
+  }
+  100% {
+    transform: translateX(calc(100vw + 150px));
+  }
+}
+
+/* Walking leg/body bobbing motion */
+@keyframes legBob {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-3px) rotate(1deg);
+  }
+}
+
+/* Child energetic jumping motion */
+@keyframes childJump {
+  0%, 100% {
+    transform: translateY(0px) scaleY(1);
+  }
+  30% {
+    transform: translateY(-16px) scaleY(1.05);
+  }
+  50% {
+    transform: translateY(-22px) scaleY(0.98);
+  }
+  75% {
+    transform: translateY(-5px) scaleY(1);
+  }
+}
+
+/* Steam rising from hot food stalls */
+@keyframes steamRise {
+  0% {
+    transform: translateY(0) scaleX(0.8);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-25px) scaleX(1.4);
+    opacity: 0;
+  }
+}
+
+.animate-walk-across {
+  animation: walkAcross 24s linear infinite;
+}
+
+.animate-parent-walk {
+  animation: legBob 0.6s ease-in-out infinite;
+}
+
+.animate-child-jump {
+  animation: childJump 0.8s ease-in-out infinite;
+}
+
+.animate-steam {
+  animation: steamRise 2.5s ease-out infinite;
+}
