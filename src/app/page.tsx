@@ -8,13 +8,13 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Search, MapPin, Flame, Star, Clock } from "lucide-react";
 
-// Mock Data
+// Mock Data - All stalls set to isOpen: false
 const MOCK_STALLS = [
   {
     id: "1",
     name: "Sizzling Skewers & BBQ",
     category: "Street Food",
-    isOpen: true,
+    isOpen: false,
     location: "Lane A - Stall 12",
     popularItem: "Spicy Sizzling Sisig",
     rating: "4.8",
@@ -25,7 +25,7 @@ const MOCK_STALLS = [
     id: "2",
     name: "Grab A-TEA",
     category: "Milk Tea",
-    isOpen: true,
+    isOpen: false,
     location: "Lane B - Stall 04",
     popularItem: "Velvet Oreo MilkTea",
     rating: "4.9",
@@ -47,7 +47,7 @@ const MOCK_STALLS = [
     id: "4",
     name: "Tokyo Ramen & Noodle",
     category: "Japanese",
-    isOpen: true,
+    isOpen: false,
     location: "Lane C - Stall 08",
     popularItem: "Tonkotsu Special Ramen",
     rating: "4.9",
@@ -58,7 +58,7 @@ const MOCK_STALLS = [
     id: "5",
     name: "Lugaw ni Jeseca",
     category: "Filipino Lugaw",
-    isOpen: true,
+    isOpen: false,
     location: "Lane B - Stall 10",
     popularItem: "Overload Lugaw",
     rating: "4.8",
@@ -69,7 +69,7 @@ const MOCK_STALLS = [
     id: "6",
     name: "Sweet Crave Crepes",
     category: "Desserts",
-    isOpen: true,
+    isOpen: false,
     location: "Lane D - Stall 01",
     popularItem: "Nutella Banana Crepe",
     rating: "4.6",
